@@ -3,94 +3,312 @@ body{
     padding: 0px;
     margin: 0px;
 }
-.footer-top{
-    background-color:#000000; 
-    display: flex;
-    color: #FFFFFF;
-    justify-content: space-around;
+
+/* SignUp Section */
+.signup-section{
+    text-align: center;
+    background-color: #F2E8DF;
+    padding:50px 3px ;
+  }
+
+input[type=email]{
+    width: 90%;
+    height: 40px;
+    border-color: #000000;
+    border: 0.1px solid ;
+    padding-left: 10px;
 }
+
+::-webkit-input-placeholder { 
+    color: #000000;
+}
+
+.signup-button button{
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 2px;
+    margin-top: 25px;
+    width: 30%;
+}
+.signup-section p{
+    margin-top: 30px;
+}
+
+/* footer */
+
+.footer-top{
+    display: none;
+}
+
 .footer-bottom{
     background-color: #222222;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    padding:37px 0px;
-    gap:30px;
-    flex-wrap:wrap; 
+    text-align: center;
 }
 
-.footer-bottom i{
+.logos i{
     color: #FFFFFF;
+    padding: 0px 30px;
+    padding-top: 60px;
 }
 
-.footer-top .footer-top-middle h4{
-    font-family: 'Playfair Display';
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 120%;
+.footer-bottom-list ul{
+    list-style-type: none;
+    padding-bottom: 50px; 
 }
 
-.footer-top .footer-top-middle p{
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight:400;
-    font-size: 14px;
-    line-height: 120%;
-    margin-top: -25px;
-}
-.footer-bottom .footer-bottom-list{
-    display: flex;
-    list-style-type: none; 
-}
-
-.footer-bottom .footer-bottom-list li{
-    padding: 10px 50px;
+.footer-bottom-list ul li{
     color: #FFFFFF;
-}
-
-button{
-    position: absolute;
-    background: #FFFFFF;
-    top: 30px;
-    width: 160px;
-    height: 52px;
-    right: 27px;
-    border-radius: 8px;
-}
-
-button .btn{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.btn-text p{
-    position: relative;
-    top: -8px;
-}
-
-.btn-text h3{
-    position: relative;
-    top: -24px;
-    right: 12px;
+    padding: 10px 0px;
+    margin-left: -30px;
 }
 
 
-.footer-bottom .logos i{
-    margin-left: 50px;
-}
 
 
-/* max width 378px */
-@media only screen and (max-width: 378px) {
+@media only screen and (min-width: 768px) and (max-width:991px) {
+
+    /* signup Section */
+    .signup-section{
+        padding:50px 60px ;
+    }
+
+    form{
+        display: flex;
+        padding: 0px 90px;
+        flex-direction: row;
+    }
+
+    input[type=email]{
+        width:320px;
+        height: 40px;
+    }
+
+    .signup-button button{
+        width: 110px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+
+    /* footer section */
     .footer-top{
-        display: none;
+        display: flex;
+        background-color: #000000;
+        color: #FFFFFF;
+        justify-content: space-evenly;
+        padding: 0px 60px;
     }
-    .footer-bottom .footer-bottom-list{
-        flex-direction: column;
-        text-align: center;
+
+    .test{
+        padding-top:20px ;
     }
-    .footer-bottom .logos i{
-        margin-left: 40px;
-        margin-right: 30px;
+
+    .btn{
+        display: flex;
+        width: 110px;
+        height: 40px;
     }
-  }
+
+    .btn-text p{
+        font-size: 10px;
+    }
+
+    .btn-text h3{
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    .footer-top-middle p{
+        margin-top: -15px;
+        font-size: 12px;
+    }
+
+    .footer-bottom{
+        display: flex;
+        padding: 0px 50px;
+    }
+
+    .logos i{
+        color: #FFFFFF;
+        padding: 0px 10px;
+        padding-top: 60px;
+    }
+
+    .footer-bottom-list ul li{
+        display: inline-block;
+        padding: 50px 5px;
+        margin-left: 0px;
+    }
+    .footer-bottom-list ul{
+        list-style-type: none;
+        padding-bottom: 0px; 
+    }
+
+}
+
+@media only screen and (min-width: 991px) and (max-width:1199px) {
+
+
+    /* signup section */
+
+    .signup-section{
+        padding:50px 180px ;
+    }
+
+    form{
+        display: flex;
+        padding: 0px 100px;
+        flex-direction: row;
+    }
+
+    input[type=email]{
+        width:320px;
+        height: 40px;
+    }
+
+    .signup-button button{
+        width: 110px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+
+    /* footer section */
+    .footer-top{
+        display: flex;
+        background-color: #000000;
+        color: #FFFFFF;
+        justify-content: space-evenly;
+        padding: 0px 80px;
+    }
+
+    .test{
+        padding-top:28px ;
+    }
+
+    .btn{
+        display: flex;
+        width: 110px;
+        height: 40px;
+    }
+
+    .btn-text p{
+        font-size: 10px;
+    }
+
+    .btn-text h3{
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    .footer-top-middle p{
+        margin-top: -15px;
+        font-size: 15px;
+    }
+
+    .footer-bottom{
+        display: flex;
+        padding: 0px 165px;
+    }
+
+    .logos i{
+        color: #FFFFFF;
+        padding: 0px 10px;
+        padding-top: 60px;
+    }
+
+    .footer-bottom-list ul li{
+        display: inline-block;
+        padding: 50px 10px;
+        margin-left: 0px;
+    }
+    .footer-bottom-list ul{
+        list-style-type: none;
+        padding-bottom: 0px; 
+    }
+}
+
+
+
+@media only screen and (min-width: 1199px) and (max-width:1440px) {
+
+
+    /* signup section */
+    .signup-section{
+        padding:50px 300px ;
+    }
+
+    form{
+        display: flex;
+        padding: 0px 110px;
+        flex-direction: row;
+    }
+
+    input[type=email]{
+        width:320px;
+        height: 40px;
+    }
+
+    .signup-button button{
+        width: 110px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+
+    /* footer section*/
+    .footer-top{
+        display: flex;
+        background-color: #000000;
+        color: #FFFFFF;
+        justify-content: space-evenly;
+        padding: 0px 190px;
+    }
+
+    .test{
+        padding-top:28px ;
+    }
+
+    .btn{
+        display: flex;
+        width: 110px;
+        height: 40px;
+    }
+
+    .btn-text p{
+        font-size: 10px;
+    }
+
+    .btn-text h3{
+        font-size: 15px;
+        margin-top: -10px;
+    }
+
+    .footer-top-middle p{
+        margin-top: -15px;
+        font-size: 15px;
+    }
+
+    .footer-bottom{
+        display: flex;
+        padding: 0px 175px;
+    }
+
+    .logos i{
+        color: #FFFFFF;
+        padding: 0px 10px;
+        padding-top: 60px;
+    }
+
+    .footer-bottom-list ul li{
+        display: inline-block;
+        padding: 50px 34px;
+        margin-left: 0px;
+    }
+    .footer-bottom-list ul{
+        list-style-type: none;
+        padding-bottom: 0px; 
+    }
+}
